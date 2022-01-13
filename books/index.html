@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Books</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- local styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- native component -->
+    <script src="books.js"></script>        
+  </head>
+  <body>
+    <h1 style="font-size: 69px ;">Coding Book List</h1>
+    <p style="font-size: large;">
+        Card Index:
+      <a href="#0">#1</a> ,
+      <a href="#1">#2</a> ,
+      <a href="#2">#3</a> ,
+      <a href="#3">#4</a> ,
+      <a href="#4">#5</a> ,
+      <a href="#5">#6</a> ,
+      <a href="#6">#7</a> ,
+      <a href="#7">#8</a>
+    </p>
+    <!-- we will put our teact component inside this div -->
+    <div id="root"></div>
+
+    <!-- load react -->
+    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- load our react component. -->
+    <script src="index.js" defer type="text/babel"></script>
+
+  </body>
+</html>
